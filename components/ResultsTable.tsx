@@ -22,7 +22,10 @@ export default function ResultsTable ( {files} : ResultsTableItems ) {
                         {files.map((file, idx) => (
                             <tr key={idx}>
                                 <td>{file.name}</td>
+                                {/* Insert Parsed Company Info here */}
+                                {/* Also Allow for Selection if less than .8 match */}
                                 <td>Company Name</td>
+                                {/* Insert Parsed Internal ID here */}
                                 <td>Internal Id</td>
                                 <td>{file.size} bytes</td>
                             </tr>

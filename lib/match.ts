@@ -1,1 +1,3 @@
-//! This will call on our LLM (GPT 4o Mini) 
+//! This will be string‑similarity logic + tests
+//! Work on Levenshtein Logic
+//! One jest test. 
