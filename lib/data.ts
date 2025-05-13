@@ -33,6 +33,7 @@ const INSUREDS: Insured[] = [
     { internalId: "B3D4", name: "Cascade Water Works" },
     { internalId: "F5H6", name: "Urban Grid Construction" },
     { internalId: "J7L8", name: "Vertex Capital Management" },
+    { internalId: "N/A", name: "N/A" }
 ];
 
 export default INSUREDS;

@@ -2,16 +2,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
-    border-radius: 5px;
-    max-width: fit-content;
-    margin-top: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    animation: fadeSlideIn 0.6s ease-out both
 }
 
-.body {
-    border: 2px solid black;
+.results-table table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
 }
 
-th {
-    padding: 0 10px;
+.results-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.results-table th,
+.results-table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
