@@ -1,7 +1,18 @@
+//! I wanted to try understanding interface vs. types.
+//! Types are more flexible and allow for unions (this variable can be this or that). Helpful for writing readable conditionals.
+//! Interfaces can override other interfaces. Kind of like a blueprint you continue to build on. 
+//! In this case, interfaces might be better if we wanted to extend the Insured array of objects by adding in another category such as
+//! Levenshtein % match or something like that. 
+
 export interface Insured {
     internalId: string;
     name: string;
 }
+
+// type Insured = {
+//     internalId: string;
+//     name: string;
+// }
 
 const INSUREDS: Insured[] = [
     { internalId: "A1B2", name: "Riley HealthCare LLC" },
